@@ -6,8 +6,8 @@ ET AI Hackathon 2026 Submission - Problem Statement 8
 **ET AI Hackathon 2026 Project**
 
 ## 👥 Team
-*Aryan Kumawat
-*Rajguru Sevda
+Aryan Kumawat
+Rajguru Sevda
 
 Aegis is a Unified Asset & Operations Brain for Industrial Intelligence. It features an AI-powered **Expert Knowledge Copilot** designed to help operators and engineers query industrial procedures, safety protocols, and equipment status.
 
