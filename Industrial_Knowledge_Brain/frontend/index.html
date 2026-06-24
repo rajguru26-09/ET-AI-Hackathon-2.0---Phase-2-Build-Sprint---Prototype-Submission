@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aegis - Industrial Knowledge Brain</title>
+    <meta name="description" content="Unified Asset & Operations Brain for Industrial Intelligence">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons for beautiful modern icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo-container">
+                <i class="ph-fill ph-factory"></i>
+                <h2>Aegis<span>Brain</span></h2>
+            </div>
+            
+            <nav class="main-nav">
+                <a href="#" class="nav-item active"><i class="ph ph-chat-teardrop-text"></i> Copilot</a>
+                <a href="#" class="nav-item"><i class="ph ph-books"></i> Knowledge Graph</a>
+                <a href="#" class="nav-item"><i class="ph ph-chart-line-up"></i> Analytics</a>
+                <a href="#" class="nav-item"><i class="ph ph-gear"></i> Settings</a>
+            </nav>
+
+            <div class="document-upload-section">
+                <h3>Knowledge Base</h3>
+                <div class="upload-zone" id="uploadZone">
+                    <i class="ph ph-upload-simple"></i>
+                    <p>Drop industrial docs here</p>
+                    <span class="sub-text">PDF, TXT, manuals</span>
+                    <input type="file" id="fileInput" multiple hidden>
+                </div>
+                <div class="document-list" id="documentList">
+                    <!-- Uploaded docs will appear here -->
+                    <div class="doc-item">
+                        <i class="ph-fill ph-file-pdf"></i>
+                        <span>Pump_Maintenance_V2.pdf</span>
+                    </div>
+                    <div class="doc-item">
+                        <i class="ph-fill ph-file-text"></i>
+                        <span>Safety_Guidelines_2025.txt</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-header">
+                <div class="header-title">
+                    <h1>Expert Knowledge Copilot</h1>
+                    <p>AI-powered assistant for unified industrial operations</p>
+                </div>
+                <div class="header-actions">
+                    <button class="icon-btn"><i class="ph ph-bell"></i></button>
+                    <div class="user-profile">
+                        <img src="https://ui-avatars.com/api/?name=Engineer&background=2563eb&color=fff" alt="User">
+                    </div>
+                </div>
+            </header>
+
+            <div class="chat-container">
+                <div class="chat-history" id="chatHistory">
+                    <!-- Chat messages -->
+                    <div class="message ai-message">
+                        <div class="message-avatar">
+                            <i class="ph-fill ph-robot"></i>
+                        </div>
+                        <div class="message-content">
+                            <p>Hello! I am Aegis, your Industrial Knowledge Copilot. I have analyzed <strong>1,240</strong> operating procedures, <strong>850</strong> maintenance logs, and <strong>430</strong> P&IDs. How can I assist you with your equipment today?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-input-container">
+                    <form id="chatForm" class="chat-form">
+                        <button type="button" class="attachment-btn"><i class="ph ph-paperclip"></i></button>
+                        <input type="text" id="chatInput" placeholder="Ask about maintenance procedures, safety protocols, or equipment status..." autocomplete="off">
+                        <button type="submit" class="send-btn"><i class="ph-fill ph-paper-plane-right"></i></button>
+                    </form>
+                    <div class="quick-prompts">
+                        <button class="prompt-chip">What is the RCA for recent pump failures?</button>
+                        <button class="prompt-chip">Show me the safety checklist for confined space.</button>
+                        <button class="prompt-chip">Summarize the latest OISD compliance updates.</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
